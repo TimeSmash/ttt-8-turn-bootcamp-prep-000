@@ -3,7 +3,10 @@
 puts "Welcome to Tic Tac Toe!"
 
 display_board(board)
+<<<<<<< HEAD
 
 until valid_move?  == true
   turn(board)
 end
+=======
+>>>>>>> 0f434b5b3a427ac8b17f9d395f2f0ffaed8d22fb

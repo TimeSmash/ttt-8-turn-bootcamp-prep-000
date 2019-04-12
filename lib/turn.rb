@@ -1,6 +1,9 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f434b5b3a427ac8b17f9d395f2f0ffaed8d22fb
 def turn(board)
 
 
@@ -8,6 +11,7 @@ def turn(board)
 
   user_input = gets.strip
 
+<<<<<<< HEAD
   array_index = input_to_index(user_input)
 
   if valid_move?(board, array_index)
@@ -17,6 +21,16 @@ def turn(board)
     turn(board)
   end  
   
+=======
+
+  until valid_move?
+    if valid_move?(board, input_to_index(user_input))
+      move(board, 0, "X")
+    else
+      user_input = gets.strip
+    end  
+  end
+>>>>>>> 0f434b5b3a427ac8b17f9d395f2f0ffaed8d22fb
 end
 
 
